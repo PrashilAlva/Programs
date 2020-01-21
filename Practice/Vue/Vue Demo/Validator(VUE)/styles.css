@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:wheat;
+    background:url(https://coolbackgrounds.io/images/backgrounds/index/disco-dba865f1.png) center no-repeat;
+}
+
+#form{
+    border:5px solid wheat;
+    border-radius:2em;
+    height:200px;
+    width:250px;
+    margin:auto;
+    align-content: center;
+    padding:30px;
+    border-block:center; 
+}
+
+#validator legend{
+    font-weight: bold;
+    padding:30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+#form label{
+    margin:30px;
+}

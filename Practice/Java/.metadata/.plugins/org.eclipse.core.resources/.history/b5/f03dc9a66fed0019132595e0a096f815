@@ -1,0 +1,58 @@
+import java.util.*;
+public class MovieQueue {
+	public static Scanner s=new Scanner(System.in);
+	public static int ch,front=0,rear=-1,max=6;
+	public static int[] queue=new int[max];
+	public static void main(String[] args) {
+		boolean loop=true;
+		while(loop) {
+			System.out.print("1.Insert\n2.Delete\n3.Display\n4.Exit\nEnter your Choice?\n");
+			ch=s.nextInt();
+			switch(ch) {
+			case 1:insert();
+			break;
+			case 2:delet();
+			break;
+			case 3:display();
+			break;
+			case 4:loop=false;
+			break;
+			default:System.out.println("Invalid Choice!!!\nTry Again...");
+			break;
+			}
+		}
+	}
+	public static void insert() {
+		if(rear==max-1) {
+			System.out.println("Queue is Full!!!");
+		}
+		else {
+			System.out.println("Enter the Element to be inserted?");
+			int ele=s.nextInt();
+			queue[++rear]=ele;
+			System.out.println("Element Inserted...");
+		}
+	}
+	public static void delet() {
+		if(front>rear) {
+			System.out.println("Queue is Empty!!!");
+		}
+		else {
+			int ele=queue[front++];
+			System.out.println("Element Deleted is "+ele);
+		}
+	}
+	public static void display() {
+		if(front>rear) {
+			System.out.println("Queue is Empty!!!");
+		}
+		else {
+			System.out.println("Elements in the Queue are:");
+			int ele=s.nextInt();
+			queue[++rear]=ele;
+			System.out.println("Element Inserted...");
+		}
+	}
+	
+		}
+}

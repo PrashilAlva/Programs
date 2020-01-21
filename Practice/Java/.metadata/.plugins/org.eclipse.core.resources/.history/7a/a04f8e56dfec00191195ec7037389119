@@ -1,0 +1,12 @@
+package calci;
+import java.util.*;
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int ch;
+		System.out.print("1.Addition(+)\n2.Subtraction(-)\n3.Multiplication(*)\n4.Division(/)\n");
+
+	}
+
+}

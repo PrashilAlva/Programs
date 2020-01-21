@@ -1,0 +1,30 @@
+import java.util.*;
+public class MovieQueue {
+	public static Scanner s=new Scanner(System.in);
+	public static int ch,front=0,rear=-1;
+	public static int[] queue=new int[50];
+	public static void main(String[] args) {
+		boolean loop=true;
+		while(loop) {
+			System.out.print("1.Insert\n2.Delete\n3.Display\n4.Exit\nEnter your Choice?\n");
+			ch=s.nextInt();
+			switch(ch) {
+			case 1:insert();
+			break;
+			case 2:delet();
+			break;
+			case 3:display();
+			break;
+			case 4:loop=false;
+			break;
+			default:System.out.println("Invalid Choice!!!\nTry Again...");
+			break;
+			}
+		}
+	}
+	public static void insert() {
+		if(front>rear)
+			
+	}
+
+}

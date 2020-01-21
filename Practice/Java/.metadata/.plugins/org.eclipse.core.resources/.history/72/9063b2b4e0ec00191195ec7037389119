@@ -1,0 +1,59 @@
+package calci;
+import java.util.*;
+public class Calculator {
+	static Scanner s=new Scanner(System.in);
+	public static void main(String[] args) {
+		int ch;
+		boolean loop=true;
+		while(loop) {
+			System.out.print("1.Addition(+)\n2.Subtraction(-)\n3.Multiplication(*)\n4.Division(/)\n5.Exit\n");
+			System.out.println("Enter your choice?");
+			ch=s.nextInt();
+			switch(ch) {
+			case 1:add();
+			break;
+			case 2:subtract();
+			break;
+			case 3:multiply();
+			break;
+			case 4:divide();
+			break;
+			case 5:loop=false;
+			break;
+			default:System.out.println("Invalid Choice!!!\nTry Again...");
+			break;
+			}
+		}
+
+	}
+	public static void add() {
+		System.out.println("Enter two numbers");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=a+b;
+		System.out.println("Sum of Two numbers is"+c);
+	}
+	public static void divide() {
+		System.out.println("Enter two numbers");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=a+b;
+		System.out.println("Sum of Two numbers is"+c);
+	}
+	public static void subtract() {
+		System.out.println("Enter two numbers");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=a+b;
+		System.out.println("Sum of Two numbers is"+c);
+	}
+	public static void multiply() {
+		System.out.println("Enter two numbers");
+		int a=s.nextInt();
+		int b=s.nextInt();
+		int c=a+b;
+		System.out.println("Sum of Two numbers is"+c);
+	}
+	
+
+}

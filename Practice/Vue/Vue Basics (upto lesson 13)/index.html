@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue-JS App</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-part">
+        <h1>{{text}}</h1>
+        <br>
+        <p>Your Details Are:</p>
+        <br>
+        <h2>Name:{{name}}</h2>
+        <br>
+        <h2>Job:{{Job}}</h2>
+        <br>
+        <h2>{{greet('Good Evening')}}</h2>
+        <br>
+        <a v-bind:href="website">My Github Page!</a>
+        <br>
+        <p v-html="websiteTag"></p>
+        <button @click.once="add">Increment age</button>
+        <button @click.once="subtract">Decrement age</button>
+        <br>
+        <h2>Your Current Age is:{{age}}</h2>
+        <div @mousemove="coordinates">Current Co-ordinates of Mouse is {{x}},{{y}}</div>
+        <a @click.prevent="click" href="https://www.google.com">Click here!</a>
+        <h2>Your details:</h2>
+        <label>Name:</label>
+        <input type="text" @keyup.enter="logName" id="name" />
+        <br>
+        <label>Age:</label>
+        <input type="text" @keyup.enter="logAge" id="age" />
+        <br>
+        <label>Two way binding</label>
+        <input type="text" v-model="nameee">
+        <br>
+        <span>{{nameee}}</span>
+        <h1>DYnamic CSS eg 1</h1>
+        <div @click="available=!available" v-bind:class="{available:available}">
+            <span>Hey</span>
+        </div>
+        <button @click="error=!error">Toggle Error</button>
+        <button @click="success=!success">Toggle Success</button>
+        <p v-if="error">There was an error</p>
+        <p v-else-if="success">Successfull!</p>
+        <template v-for="ele in elems">
+            <h3>{{ele}}</h3>
+        </template>
+        <template v-for="(obj,ind) in games">
+            <div v-for="(key,val) in obj">
+                <h2>{{ind}}| {{val}}</h2>
+            </div>"
+        </template>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

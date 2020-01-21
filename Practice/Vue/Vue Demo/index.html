@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Voter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="votes">
+    <h1>{{heading}}</h1>
+    <br>
+    <h2>{{message}}</h2>
+    <br>
+    <button @click="addb">BJP</button>
+    <button @click="addc">Congress</button>
+    <button @click="adda">AAP</button>
+    <button @click="addo">Others</button>
+    <br>
+    <h2>BJP Vote Count:{{bjp}}</h2>
+    <br>
+    <h2>Congress Vote Count:{{cong}}</h2>
+    <br>
+    <h2>AAP Vote Count:{{aap}}</h2>
+    <br>
+    <h2>Othres Vote Count:{{oth}}</h2>
+    <br>
+   
+</div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validator</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="validator">
+        <h1>{{title}}</h1>
+        <p>{{info}}</p>
+        <hr>
+        <legend>Details</legend>
+        <div id="form">
+            <label>Name:</label><br>
+            <input type="text" ref="name" placeholder="Name"><br>
+            <label>Password:</label><br>
+            <input type="password" ref="pword" placeholder="Password"><br>
+            <input type="submit" value="Login" @click="validate">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

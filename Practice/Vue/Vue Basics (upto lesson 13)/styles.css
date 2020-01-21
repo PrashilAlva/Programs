@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color:wheat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:center;
+}
+
+a:visited{
+    color:wheat;
+}
+
+button{
+    background-color:wheat;
+}
+
+span{
+    background:green;
+    color:blue
+}
+
+.avaliable span{
+    background:red;
+}
